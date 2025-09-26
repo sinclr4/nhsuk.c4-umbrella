@@ -1,7 +1,7 @@
 {
   "$schema": "https://likec4.dev/schemas/config.json",
-  "name": "nhsuk-umbrella",
-  "title": "NHS.UK Unified Architecture",
+  "name": "NHS England Architecture Diagrams",
+  "title": "NHS England Architecture Diagrams",
   "projects": [
     "./nhsuk.c4-diagrams",
     "./ftrs-directory-of-services/architecture"
