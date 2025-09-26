@@ -1,10 +1,7 @@
 {
   "$schema": "https://likec4.dev/schemas/config.json",
-  "name": "NHS England Architecture Diagrams",
-  "title": "NHS England Architecture Diagrams",
+  "name": "Find the right Service",
+  "title": "Find the right Service Architecture Diagrams",
   "projects": [
-    "./nhsuk.c4-diagrams",
-    "./ftrs-directory-of-services/architecture",
-    "./nhsapp"
   ]
 }
