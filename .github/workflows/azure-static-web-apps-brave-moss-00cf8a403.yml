@@ -2,6 +2,8 @@
 name: Deploy C4 to Azure Static Web
 
 on:
+  schedule:
+   - cron:   0,30 8-18 * * 1-5
   # Runs on pushes targeting the default branch and c4 files
   push:
     branches: ["main"]
@@ -44,6 +46,7 @@ jobs:
           base: ${{ steps.pages.outputs.base_path }}
           # (optional) by default, the bundled version is used, which is faster due to skipping the installation
           likec4-version: latest
+          
         
       - name: Deploy to Azure Static Website
         uses: Azure/static-web-apps-deploy@v1
