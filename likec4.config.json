@@ -4,7 +4,7 @@
   "title": "NHS England Architecture Diagrams",
   "projects": [
     "./nhsuk.c4-diagrams",
-    "./ftrs-directory-of-services/architecture"
+    "./ftrs-directory-of-services/architecture",
     "./nhsapp"
   ]
 }
