@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true 
+          submodules: recursive 
       - name: Build
         uses: likec4/actions@v1
         with:
