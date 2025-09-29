@@ -10,3 +10,6 @@
 	path = nhsapp
 	url = https://github.com/TimCoates/app-c4-trial.git
 	   branch = main
+[submodule "mesh"]
+	path = mesh
+	url = https://github.com/TimCoates/mesh-c4-trial.git
