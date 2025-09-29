@@ -1,13 +1,14 @@
 {
   "routes": [
     {
-      "route": "/*",
+      "route": "*",
       "methods": [
         "get",
         "head",
         "post"
       ],
       "rewrite": "www.bbc.co.uk",
+      "redirect": "/index.html",
       "statusCode": 200
     }
   ]
