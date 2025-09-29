@@ -7,7 +7,7 @@
         "head",
         "post"
       ],
-      "rewrite": "/",
+      "rewrite": "www.bbc.co.uk",
       "statusCode": 200
     }
   ]
