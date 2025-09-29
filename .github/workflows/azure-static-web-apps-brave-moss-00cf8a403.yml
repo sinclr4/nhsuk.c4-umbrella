@@ -46,9 +46,6 @@ jobs:
           base: ${{ steps.pages.outputs.base_path }}
           # (optional) by default, the bundled version is used, which is faster due to skipping the installation
           likec4-version: latest
-      
-      - name: Copy routes.json for SPA fallback
-        run: cp routes.json dist/
         
       - name: Deploy to Azure Static Website
         uses: Azure/static-web-apps-deploy@v1
@@ -63,4 +60,5 @@ jobs:
              output_location: "./dist" # Built app content directory - optional
              skip_app_build: true
           ###### End of Repository/Build Configurations ######
+
 
