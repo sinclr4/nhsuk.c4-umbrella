@@ -7,7 +7,7 @@
         "head",
         "post"
       ],
-      "rewrite": "/index.html",
+      "rewrite": "/",
       "statusCode": 200
     }
   ]
