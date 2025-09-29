@@ -1,14 +1,1 @@
-{
-  "routes": [
-    {
-      "route": "/*",
-      "methods": [
-        "get",
-        "post",
-        "head"
-      ],
-      "rewrite": "/index.html",
-      "statusCode": 200
-    }
-  ]
-}
+{}
