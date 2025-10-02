@@ -49,6 +49,18 @@ jobs:
           # (optional) by default, the bundled version is used, which is faster due to skipping the installation
           likec4-version: latest
 
+      - name: Upload dist/ to Azure Blob Storage
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+            --account-name nhselikec4 \
+            --destination \$web \
+            --source dist \
+            --overwrite
+        env:
+          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+
       - name: Deploy to Azure Static Website
         uses: Azure/static-web-apps-deploy@v1
         with:
