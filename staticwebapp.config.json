@@ -4,6 +4,16 @@
       "route": "/project/*",
       "rewrite": "/index.html",
       "statusCode": 200
+    },
+    {
+      "route": "/View/*",
+      "rewrite": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "rewrite": "/index.html",
+      "statusCode": 200
     }
   ]
 }
