@@ -49,6 +49,11 @@ jobs:
           # (optional) by default, the bundled version is used, which is faster due to skipping the installation
           likec4-version: latest
           
+      - name: Create dist folder if missing
+        run: mkdir -p dist
+
+      - name: Inject routing config
+        run: cp staticwebapp.config.json dist/staticwebapp.config.json
 
 
       - name: Deploy to Azure Static Website
