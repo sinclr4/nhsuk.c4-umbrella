@@ -25,6 +25,8 @@ export default defineConfig({
           .join(',')
         )
       }
+      
+      copy: ['staticwebapp.config.json']
       // If no relationships found, abort
       if (lines.length === 0) {
         return ctx.abort('No relationships found')
